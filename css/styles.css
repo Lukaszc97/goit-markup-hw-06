@@ -479,14 +479,14 @@ button:focus {
 .my-form {
   margin-bottom: 30px;
 }
+.my-form .modal-input:focus {
+  outline: 0;
+  background-color: transparent;
+}
 .modal-fieldset:has(input:focus) {
   border-color: var(--main-theme-color);
   fill: var(--main-theme-color);
   transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.my-form .modal-input:focus {
-  outline: 0;
-  background-color: transparent;
 }
 
 .modal-legend {
@@ -500,7 +500,6 @@ button:focus {
   display: flex;
   position: relative;
   margin-bottom: 28px;
-
   padding: 0;
   width: 448px;
   height: 40px;
@@ -549,19 +548,6 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.input-email {
-  width: 358px;
-  height: 50px;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 16px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  padding-left: 15px;
-  margin-right: 12px;
-}
 .modal-checkbox {
   margin-right: 7px;
   z-index: 2;
@@ -587,6 +573,19 @@ button:focus {
 }
 .modal-checkbox:not(:checked) + .modal-checkbox-icon {
   opacity: 0;
+}
+.input-email {
+  width: 358px;
+  height: 50px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 15px;
+  margin-right: 12px;
 }
 .privacy-policy {
   color: var(--main-theme-color);
